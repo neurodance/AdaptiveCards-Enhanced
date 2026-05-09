@@ -8,9 +8,7 @@ using AdaptiveCards.Rendering;
 using AdaptiveCards.Rendering.Wpf;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Internal.AntiSSRF;
 using Newtonsoft.Json.Linq;
-
 namespace ImageRendererServer.Controllers
 {
     public class RenderController : Controller
