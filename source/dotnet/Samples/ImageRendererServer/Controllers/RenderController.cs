@@ -13,14 +13,14 @@ namespace ImageRendererServer.Controllers
 {
     public class RenderController : Controller
     {
-        private readonly IHostingEnvironment _env;
+        private readonly IWebHostEnvironment _env;
         private readonly string[] _allowedDomains = new string[]
         {
             "raw.githubusercontent.com",
             "github.com"
         };
 
-        public RenderController(IHostingEnvironment env)
+        public RenderController(IWebHostEnvironment env)
         {
             _env = env;
         }

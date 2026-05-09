@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
     <Authors>Microsoft</Authors>
     <Summary>Adaptive Card renderer for WPF</Summary>
     <Description>This library implements classes for rendering Adaptive Cards into WPF controls</Description>
@@ -25,21 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Include="Themes\generic.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\AdaptiveCards\AdaptiveCards.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-    <Reference Include="System.Windows.Presentation" />
-    <Reference Include="System.Xaml" />
-    <Reference Include="WindowsBase" />
   </ItemGroup>
 
 </Project>
